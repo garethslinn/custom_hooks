@@ -11,7 +11,7 @@ yarn
 
 yarn start
 
-## example useage
+## example useage for useStateStorage
 
 const [value, setValue] =  useStateStorage('id');
 
