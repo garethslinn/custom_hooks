@@ -18,3 +18,16 @@ const useStateStorage = (key, currentValue) => {
   }
   
   export { useStateStorage }
+
+
+  // useage:
+  // updates local state and saves in local storage
+  //
+  // const [value, setValue] =  useStateStorage('id');
+  // const [inputValue, setInputValue] = useState('');
+  // const handleInput = (e) => { setInputValue(e.target.value); }
+  // 
+  // <input type="text" onChange={handleInput}  />
+  // <button onClick={() => setValue(inputValue)}>update</button>
+
+

@@ -7,3 +7,10 @@ const useToggle = currentState => {
 
 export default useToggle;
 
+  // useage:
+  // applies a toggle
+  //
+  // const [isVisble, toggle] = useToggle(false);
+  // 
+  // <button onClick={toggle}>{isVisble ? "Close" : "Open"}</button>
+  // { isVisble && <div>Element</div> }

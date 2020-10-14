@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { useStateStorage } from './hooks/useStateStorage';
 import useToggle from './hooks/useToggle';
+import { useDocTitle } from './hooks/useDocTitle';
 import './App.css';
 
 function App() {
   const [value, setValue] =  useStateStorage('id');
   const [inputValue, setInputValue] = useState('');
   const [isVisble, toggle] = useToggle(false);
+  useDocTitle('New document title')
   const handleInput = (e) => {
     setInputValue(e.target.value);
   }
