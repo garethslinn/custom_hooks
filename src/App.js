@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [value, setValue] =  useStateStorage('id');
   const [inputValue, setInputValue] = useState('');
-  const [show, toggle] = useToggle(false);
+  const [isVisble, toggle] = useToggle(false);
   const handleInput = (e) => {
     setInputValue(e.target.value);
   }
@@ -19,8 +19,8 @@ function App() {
         <button onClick={() => setValue(inputValue)}>update</button>
       </div>
       <div>
-        <button onClick={toggle}>{show ? "Close" : "Open"}</button>
-        { show && <div>Element</div> }
+        <button onClick={toggle}>{isVisble ? "Close" : "Open"}</button>
+        { isVisble && <div>Element</div> }
       </div>
     </div>
   );
